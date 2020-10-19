@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Management Portal</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='ReqMangement1.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script>
+        function redirectToReplication() {
+          document.location.href='ReplicationRequest.html';
+        }
+    </script>
+
+    <Style>
+        body{
+            background-image:url("bg2.jpg");
+            background-size: cover;
+        }
+        .row-CSS{
+           margin: 30px 200px;
+        }
+    </Style>
+</head>
+<body>
+    <h1 class="head-indexpage">Request Management Portal</h1>
+    <br><br><br><br><br><br>
+    <div class="row-CSS row">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 ">
+        <div class="card" style="width: auto;">
+            <div class="card-header" style="text-align: center; font-size: xx-large;">
+                Request Type1
+            </div>
+            <br>
+                <p class="card-text" style="text-align: center;">
+                  <button type="button" class="btn btn-dark" onclick="redirectToReplication()" style="" data-toggle="" data-target="">
+                     Submit NEW Request
+                    </button>
+                </p>
+                
+                <p class="card-text" style="text-align: center;">
+                    <button type="button" class="btn btn-success" onclick="redirectToXlink()" data-toggle="modal" data-target="#Track-Replication-Req">
+                       Track Request Status
+                    </button>
+                </p>
+                <div class="modal fade" id="Track-Replication-Req" tabindex="-1" role="dialog" aria-labelledby="Track-Replication-Req-label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="Track-Replication-Req-label">Replication Requests</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <table class="table table-striped table-dark" style="border-radius: 10px;">
+                                    <thead>
+                                        <th data-field="Serial" bgcolor="blue">SL #</th>
+                                        <th data-field="Time" data-sortable="true" bgcolor="blue">Title</th>
+                                        <th data-field="Request" bgcolor="blue">Title</th>
+                                        <th data-field="UiPath_Job_Name" bgcolor="blue">Title</th>
+                                        <th data-field="Sender" bgcolor="blue">Title</th>
+                                        <th data-field="Receiver" bgcolor="blue">Title</th>
+                                        <th data-field="Msg-Type"bgcolor="blue">Title</th>
+                                        <th data-field="Job-status"bgcolor="blue">Title</th>
+                                        <th data-field="idoc-status"bgcolor="blue">Title</th>
+                                      </thead>
+                                      <tr>
+                                          <td>Value</td>
+                                          <td>Value</td>
+                                          <td>Value</td>
+                                          <td>Value</td>
+                                          <td>Value</td>
+                                          <td>Value</td>
+                                          <td>Value</td>
+                                          <td>Value</td>
+                                          <td>Value</td>
+                                      </tr>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <br>
+          </div>
+      </div>
+
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 ">
+        <div class="card" style="width: auto;">
+            <div class="card-header" style="text-align: center; font-size: xx-large;">
+                Request Type2
+            </div>
+            <br>
+                <p class="card-text" style="text-align: center;">
+                  <button type="button" class="btn btn-dark" onclick="" style="" data-toggle="modal" data-target="#exampleModal9927_1">
+                     <!-- Submit NEW Request -->
+                     Going LIVE soon
+                    </button>
+                </p>
+                
+                <p class="card-text" style="text-align: center;">
+                    <button type="button" class="btn btn-success" onclick="" style="" data-toggle="modal" data-target="#exampleModal9927_1">
+                       <!-- Track Request Status -->
+                       Going LIVE soon
+                    </button>
+                </p>
+            <br>
+          </div>
+      </div>
+    </div>
+</body>
+</html>

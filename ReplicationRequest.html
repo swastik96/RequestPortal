@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>Replication Request</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='ReqMangement1.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <Script>
+        function redirectToHome() {
+            document.location.href = 'index.html';
+        }
+        $(function () {
+            $('[data-toggle1="tooltip"]').tooltip()
+        })
+    </Script>
+</head>
+
+<body>
+    <nav style="padding: 10px;">
+        <ul style="display: flex; list-style: none;margin: 0;">
+
+            <li style="margin-left: auto;">
+                <button class="btn btn-light" style="background-color: yellow; color: black; font-style: initial; "
+                    data-placement="right" data-toggle1="tooltip" data-placement="left" title="GO TO HOME PAGE"
+                    onclick="redirectToHome()"><b>HOME</b></button>
+            </li>
+        </ul>
+    </nav>
+    <br><br><br>
+    <div class="container">
+        <form method="post" action="FileUpload" enctype="multipart/form-data">
+            <div class="centerBox">
+                <p class="template-link"><a class="template-link"
+                    href="" target="_blank">
+                    <center>Check Template Before uploading</center></a>
+                </p>
+
+                <div class="form-row">
+                    <div class="col-md-12 mb-6 text-center">
+                        <label>
+                            <h1 style="color: white;">Request Number</h1>
+                        </label>
+                        <input type="text" name="req" class="form-control form-control-lg"
+                            placeholder="Enter Request Number here" required>
+                    </div>
+                </div>
+
+                <br>
+                <!-- file input -->
+                <div class="form-row">
+                    <div class="col-md-12 mb-6 text-center">
+                        <label>
+                            <h1 style="color: white;">Upload File</h1>
+                        </label>
+                        <input class="form-control form-control-lg" type="file" class="form-control-file" name="file"
+                            required>
+                    </div>
+                </div>
+                <br>
+                <!-- <center><button class="btn btn-primary" type="submit">SUBMIT</button></center> -->
+                <center><input type="submit" class="btn btn-primary"></center>
+                <br>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
